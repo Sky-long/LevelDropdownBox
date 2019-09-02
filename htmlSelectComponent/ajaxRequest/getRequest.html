@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get请求</title>
+    <script src="../Vendors/jquery.js"></script>
+</head>
+<body>
+<div>
+    <textarea id="getRequest"></textarea>
+    <textarea id="getRequest2"></textarea>
+</div>
+<script type="text/javascript">
+    $.getJSON('http://127.0.0.1/iMark/v1/DBAuth/DBAuthUsed',function (data) {
+        //data返回的是字符串
+        $("#getRequest").val(JSON.stringify(data[0]));
+        $("#getRequest2").val(data[0].departmentName);
+    })
+</script>
+</body>
+</html>

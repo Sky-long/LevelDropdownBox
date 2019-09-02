@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../Vendors/jquery.js"></script>
+    <script src="../PackagingComponents/dropdownbox.js"></script>
+
+</head>
+<body>
+<div class="tree well">
+    <div id="ul_tree">
+        <select id="gafather"></select>
+        <select id="father"></select>
+        <select id="child"></select>
+    </div>
+</div>
+<script type="text/javascript">
+    var testdata = [
+        {
+            "id": 31863,
+            "departmentName": "测试部",
+            "groupName": "测试一组",
+            "users": "molding,heay"
+        },
+        {
+            "id": 32125,
+            "departmentName": "测试部",
+            "groupName": "测试二组",
+            "users": "花蕊,小凱,涂兵"
+        },
+        {
+            "id": 31865,
+            "departmentName": "生产部",
+            "groupName": "产品一组",
+            "users": "molding,徐江军,歐玉,李蕊"
+        },
+        {
+            "id": 31834,
+            "departmentName": "生产部",
+            "groupName": "产品二组",
+            "users": "徐江军,歐玉,老万三,lisa"
+        },
+    ];
+    $(function () {
+        $("#ul_tree").selectTree({
+            DataParam:["departmentName","groupName","users"],
+            GafatherId:"gafather",
+            fatherId:"father",
+            childId:"child",
+            data:testdata,
+        });
+    });
+</script>
+</body>
+</html>

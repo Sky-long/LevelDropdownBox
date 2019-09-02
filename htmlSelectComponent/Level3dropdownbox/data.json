@@ -1,0 +1,26 @@
+[
+  {
+    "id": 31863,
+    "departmentName": "测试部",
+    "groupName": "测试一组",
+    "users": "molding,heay"
+  },
+  {
+    "id": 32125,
+    "departmentName": "测试部",
+    "groupName": "测试二组",
+    "users": "花蕊,小凱,涂兵"
+  },
+  {
+    "id": 31865,
+    "departmentName": "生产部",
+    "groupName": "产品一组",
+    "users": "molding,徐江军,歐玉,李蕊"
+  },
+  {
+    "id": 31834,
+    "departmentName": "生产部",
+    "groupName": "产品二组",
+    "users": "徐江军,歐玉,老万三，lisa"
+  }
+]
